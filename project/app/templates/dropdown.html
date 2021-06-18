@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 Dropdown</title>
+</head>
+<body bgcolor="#ffad33">
+<h3>Assignment 4 Output</h3>
+<h3>input text:</h3>{{input}}
+<h3> Dropdown Output:  </h3>
+
+  <select name="dropdown">
+    {% for i in string %}
+        <option>{{i}}</option><br>
+    {% endfor %}
+    </select>
+
+</body>
+</html>

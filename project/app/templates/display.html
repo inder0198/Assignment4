@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+
+</head>
+<body bgcolor="#ffad33">
+<h3>Assignment 4 Output</h3>
+
+{% if data1.data == 'checkbox' %}
+<h3> Checkbox Output:  </h3>
+{% for i in string %}
+<input type="checkbox">{{i}}<br>
+{% endfor %}
+
+{% elif id == 'dropdown' %}
+<h3> Dropdown Output:  </h3>
+  <select name="dropdown">
+    {% for i in string %}
+        <option>{{i}}</option><br>
+    {% endfor %}
+    </select>
+
+{% elif id == 'radio-button' %}
+<h3> Radio-Button Output:  </h3>
+{% for i in string %}
+<input type="radio" name="radio">{{i}}<br>
+{% endfor %}
+
+{% elif id == 'textbox' %}
+<h3> Textbox Output:  </h3>
+{% for i in string %}
+<textarea>{{i}}</textarea><br>
+{% endfor %}
+{% endif %}
+
+
+</body>
+</html>

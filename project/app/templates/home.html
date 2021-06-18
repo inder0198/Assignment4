@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+
+</head>
+<body bgcolor="#ffad33">
+<h3>Assignment 4</h3>
+<form action="/apply" method="POST">
+    {% csrf_token %}
+    Enter String: <br><textarea type="text" name="string" rows="5" cols="50"></textarea><br>
+
+    <input type="radio" id="checkbox" name="choices" value="checkbox">
+    <label for="checkbox">Checkbox</label>
+    <input type="radio" id="dropdown" name="choices" value="dropdown">
+    <label for="dropdown">Dropdown</label>
+    <input type="radio" id="radio-button" name="choices" value="radio-button">
+    <label for="radio-button">Radio-button</label>
+    <input type="radio" id="textbox" name="choices" value="textbox">
+    <label for="textbox">Textbox</label><br>
+
+    <input type="submit">
+    <input type="reset">
+
+</form>
+
+</body>
+</html>
